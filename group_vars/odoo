@@ -25,4 +25,5 @@ pacotes_odoo: [
     "libssl-dev",
     "libjpeg8-dev",
     "npm",
+    "python-software-properties",
 ]
