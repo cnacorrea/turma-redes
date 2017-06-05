@@ -17,3 +17,15 @@
         name: "{{ item }}"
         state: present
       with_items: "{{ pacotes_odoo }}"
+    - name: cria o link nodejs
+      file:
+        src: /usr/bin/nodejs
+        dest: /usr/bin/node
+        state: link
+    - name: instala os pacotes less via npm
+      npm:
+        name: "{{ item }}"
+        global: yes
+      with_items:
+        - less
+        - less-plugin-clean-css

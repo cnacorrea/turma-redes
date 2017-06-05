@@ -24,4 +24,5 @@ pacotes_odoo: [
     "libsasl2-dev",
     "libssl-dev",
     "libjpeg8-dev",
+    "npm",
 ]
